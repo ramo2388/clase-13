@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 13</title>
+</head>
+<body>
+    <script>
+        function suma(a,b){
+            return a+b;
+        }
+        function resta(a,b){
+            return a-b;
+        }
+        function multi(a,b){
+            return a*b;
+        }
+        function divi(a,b){
+            return a/b;
+        }
+        function calculadora(n1,n2,operacion){
+            switch(operacion){
+                case 'suma':
+                    return suma(n1,n2);
+                case 'resta':
+                    return resta(n1,n2);
+                case 'multi':
+                    return multi(n1,n2);
+                case 'Divi':
+                    return divi(n1,n2);
+                default:
+                    return "Operación no valida";
+            }
+        }
+        let numero1=parseFloat(prompt("Ingrese el primer numero: "));
+        let numero2=parseFloat(prompt("Ingrese el segundo numero: "));
+        let operacion=prompt("Ingrse la operación(suma, resta, multi, divi)");
+
+        console.log("El resultado es: "+resultado);
+        document.write("El resultado es: "+resultado);
+    </script>    
+</body>
+</html>
